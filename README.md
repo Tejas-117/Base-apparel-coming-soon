@@ -9,7 +9,7 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Continued development](#continued-development)
-- [Author]
+- [Author](#author)
 
 
 ## Overview
