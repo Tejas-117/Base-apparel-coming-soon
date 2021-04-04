@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
-- Live Site URL: (https://your-live-site-url.com)
+- [Solution URL](https://github.com/Tejas-117/Base-apparel-coming-soon)
+- [Live Site URL](https://your-live-site-url.com)
 
 ## My process
 
