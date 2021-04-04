@@ -1,0 +1,182 @@
+:root{
+   /* Primary */
+   --DesaturatedRed: hsl(0, 36%, 70%);
+   --SoftRed: hsl(0, 93%, 68%);
+   
+    /* Neutral */  
+   --DarkGrayishRed: hsl(0, 6%, 24%);
+   
+    /* Gradients */
+   /* --Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%); 
+   --Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%); */
+}
+html{
+   font-size: 16px;
+}
+body{
+   margin: 0;
+   padding: 0;
+   font-family: 'Josefin Sans', sans-serif;
+   box-sizing: border-box;
+}
+
+/* styled for mobile */
+.main-container{
+   display: flex;
+   flex-direction: column;
+}
+#logo{
+   width: 5rem;
+   margin: 7% 0 5% 7%;
+}
+.img-container{
+   width: 100%;
+   margin: 0;
+}
+.hero{
+   width: 100%;
+   margin: 0;
+}
+.mid-container{
+   text-align: center;
+   padding: 2% 5%;
+   margin-top: 4%;
+   margin-bottom: 15%;
+}
+.heading{
+   font-size: 3rem;
+   font-weight: 400;
+   letter-spacing: 4px;
+   color: var(--DarkGrayishRed);
+}
+span{
+   font-weight: 300;
+   color: var(--DesaturatedRed);
+}
+.msg{
+   color: var(--DesaturatedRed);
+   margin-bottom: 10%;
+}
+.email-input{
+   position: relative;
+}
+#email{
+   padding: 4% 18% 4% 7%;
+   border: var(--DesaturatedRed) solid 1px;
+   border-radius: 30px;
+}
+::placeholder{
+   color: var(--DesaturatedRed);
+   font-family: 'Josefin Sans';
+   font-size: 1rem;
+   font-weight: 600;
+   opacity: 0.6;
+}
+.arrow-img{
+   padding: 14% 0% 14% 0%;
+}
+#btn{
+   width: 70px;
+   background-image: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+   position: absolute;
+   top: 0%;
+   right: 6%;
+   border-radius: 30px;
+}
+#error-img{
+   position: absolute;
+   top: 15%;
+   right: 30%; 
+   display: none;
+}
+#error-msg{
+   color: red;
+   display: none;
+}
+
+/* fixing submit button positioning */
+@media only screen and (min-width: 400px) and (max-width: 700px){
+   #email{
+      padding: 3% 18% 4% 7%;
+   }
+   .arrow-img{
+      padding: 20%;
+   }
+   #btn{
+      right: 15%;
+   }
+}
+@media only screen and (min-width: 700px) and (max-width: 1080px){
+   .mid-container{
+      padding: 10%;
+      text-align: center;
+   }
+   .email-input{
+      width: 90%;
+   }
+   #email{
+      padding: 3% 18% 3% 7%;
+   }
+   .arrow-img{
+      padding: 20% 0;
+   }
+   #btn{
+      right: 20%;
+   }
+}
+
+/* styled for desktops*/
+@media only screen and (min-width: 1080px){
+   body{
+      position: relative;
+      height: 100vh;
+      background-image: url(./images/bg-pattern-desktop.svg);
+      background-repeat: no-repeat;
+      background-size: 52rem 45rem;
+      overflow: hidden;
+   }
+   .main-container{
+      display: flex;
+      flex-direction: row-reverse;
+   }
+   #logo{
+      display: inline-block;
+      width: 7rem;
+      margin: 3% 0 5% 5%;
+      position: absolute;
+      left: 5%;
+   }
+   .mid-container{
+      position: relative;
+      padding: 3% 12%;
+      margin-top: 8%;
+      padding-left: 10%;
+      text-align: left;
+   }
+   #hero{
+      width: 130%;      
+      height: 100%;
+   }
+   .heading{
+      padding: 0 30%;
+      padding-left: 0%;
+      margin-bottom: 10%;
+   }
+   .msg{
+      line-height: 1.7;
+   }
+   #email{
+      padding: 3% 35% 3% 7%;
+   }
+   #btn{
+      width: 100px;
+      text-align: center;
+      right: 18%;
+   }
+   .arrow-img{
+      padding: 11%;
+   }
+   #error-img{
+      right: 40%;
+   }
+}
