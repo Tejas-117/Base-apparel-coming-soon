@@ -18,6 +18,7 @@ body{
    padding: 0;
    font-family: 'Josefin Sans', sans-serif;
    box-sizing: border-box;
+  background: linear-gradient(135deg,hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
 /* styled for mobile */
@@ -66,6 +67,7 @@ span{
    padding-left: 6%;
    width: 90%;
    height: 40px;
+   background: linear-gradient(135deg,hsl(0, 0%, 100%), hsl(0, 100%, 98%));
    border: var(--DesaturatedRed) solid 1px;
    border-radius: 30px;
    outline: none;
