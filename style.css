@@ -26,7 +26,7 @@ body{
    flex-direction: column;
 }
 #logo{
-   width: 5rem;
+   width: 6rem;
    margin: 7% 0 5% 7%;
 }
 .img-container{
@@ -59,11 +59,16 @@ span{
 }
 .email-input{
    position: relative;
+   width: 300px;
+   margin: 0 auto;
 }
 #email{
-   padding: 4% 18% 4% 7%;
+   padding-left: 6%;
+   width: 90%;
+   height: 40px;
    border: var(--DesaturatedRed) solid 1px;
    border-radius: 30px;
+   outline: none;
 }
 ::placeholder{
    color: var(--DesaturatedRed);
@@ -72,16 +77,16 @@ span{
    font-weight: 600;
    opacity: 0.6;
 }
-.arrow-img{
-   padding: 14% 0% 14% 0%;
-}
 #btn{
-   width: 70px;
-   background-image: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+   background-color: var(--DesaturatedRed);
+   outline: none;
+   border: none;
+   width: 80px;
+   height: 43px;
+   border-radius: 20px;
    position: absolute;
-   top: 0%;
-   right: 6%;
-   border-radius: 30px;
+   top: 2%;
+   right: 0%;
 }
 #error-img{
    position: absolute;
@@ -94,34 +99,31 @@ span{
    display: none;
 }
 
-/* fixing submit button positioning */
-@media only screen and (min-width: 400px) and (max-width: 700px){
-   #email{
-      padding: 3% 18% 4% 7%;
+/* styled for tablets */
+@media only screen and (min-width: 600px) and (max-width: 1079px) {
+   #logo{
+      width: 8rem;
    }
-   .arrow-img{
-      padding: 20%;
-   }
-   #btn{
-      right: 15%;
-   }
-}
-@media only screen and (min-width: 700px) and (max-width: 1080px){
    .mid-container{
-      padding: 10%;
-      text-align: center;
+      max-width: 500px;
+      margin: 2% auto;
+   }
+   .heading{
+      font-size: 3.5rem;
+   }
+   .msg{
+      font-size: 1.3rem;
+      line-height: 1.5;
    }
    .email-input{
-      width: 90%;
+      width: 350px;
    }
    #email{
-      padding: 3% 18% 3% 7%;
-   }
-   .arrow-img{
-      padding: 20% 0;
+      height: 45px;
    }
    #btn{
-      right: 20%;
+      height: 48px;
+      border-radius: 25px;
    }
 }
 
@@ -141,10 +143,11 @@ span{
    }
    #logo{
       display: inline-block;
-      width: 7rem;
+      width: 9rem;
       margin: 3% 0 5% 5%;
       position: absolute;
       left: 5%;
+      z-index: 100;
    }
    .mid-container{
       position: relative;
@@ -165,14 +168,19 @@ span{
    .msg{
       line-height: 1.7;
    }
+   .email-input{
+      width: 400px;
+      margin: 0;
+      
+   }
    #email{
-      padding: 3% 35% 3% 7%;
+   height: 50px;
    }
    #btn{
+      height: 53px;
       width: 100px;
-      text-align: center;
-      right: 18%;
-   }
+      border-radius: 25px;
+   }   
    .arrow-img{
       padding: 11%;
    }
